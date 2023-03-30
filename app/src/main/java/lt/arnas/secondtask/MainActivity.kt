@@ -44,6 +44,10 @@ class MainActivity : AppCompatActivity() {
             val firstLetter = nameEditText.text[0]
             firstLetterTextView.text = "First letter of the name is '$firstLetter'"
 
+            val subtract: Float = nameLength - fuelPrice
+            val subtractTextView: TextView = findViewById(R.id.subtractTextView)
+            subtractTextView.text = "Result of subtraction $subtract"
+
         }
     }
 }
