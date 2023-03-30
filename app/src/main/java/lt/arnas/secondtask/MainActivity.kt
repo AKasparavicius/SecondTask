@@ -32,6 +32,10 @@ class MainActivity : AppCompatActivity() {
             val fuelPriceChange: TextView = findViewById(R.id.fuelPriceTextView)
             fuelPriceChange.text = "Fuel price is $fuelPrice Eur"
 
+            val sumTextView: TextView = findViewById(R.id.sumTextView)
+            val sum: Float = fuelPrice + nameLength
+            sumTextView.text = "Sum of symbols and fuel price is $sum"
+
         }
     }
 }
