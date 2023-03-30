@@ -36,6 +36,9 @@ class MainActivity : AppCompatActivity() {
             val sum: Float = fuelPrice + nameLength
             sumTextView.text = "Sum of symbols and fuel price is $sum"
 
+            val isSumPositiveTextView: TextView = findViewById(R.id.isSumPositiveTextView)
+            val isPositive: Boolean = sum > 0
+            isSumPositiveTextView.text = "Is sum positive? $isPositive"
         }
     }
 }
