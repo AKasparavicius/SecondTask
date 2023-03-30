@@ -48,6 +48,10 @@ class MainActivity : AppCompatActivity() {
             val subtractTextView: TextView = findViewById(R.id.subtractTextView)
             subtractTextView.text = "Result of subtraction $subtract"
 
+            val isSumPositive: Boolean = subtract > 0
+            val isStillPositiveTextView: TextView = findViewById(R.id.isStillPositiveTextView)
+            isStillPositiveTextView.text = "Is sum still positive? $isSumPositive"
+
         }
     }
 }
