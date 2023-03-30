@@ -27,6 +27,10 @@ class MainActivity : AppCompatActivity() {
             val numberOfLettersTextView: TextView = findViewById(R.id.numberOfLettersTextView)
             numberOfLettersTextView.text = "The name contains $nameLength symbols"
 
+            val fuelPriceEditText: TextView = findViewById(R.id.fuelPriceEditText)
+            val fuelPrice: Float = fuelPriceEditText.text.toString().toFloat()
+            val fuelPriceChange: TextView = findViewById(R.id.fuelPriceTextView)
+            fuelPriceChange.text = "Fuel price is $fuelPrice Eur"
 
         }
     }
