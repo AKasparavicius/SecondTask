@@ -15,5 +15,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val okButton: Button = findViewById(R.id.okButton)
+        okButton.visibility = View.VISIBLE
+
+        okButton.setOnClickListener {
+
         }
     }
+}
